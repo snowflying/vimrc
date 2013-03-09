@@ -1,3 +1,4 @@
+mkdir ~/.temp_dirs
 cd ~/.vim
 
 echo 'set runtimepath+=~/.vim
