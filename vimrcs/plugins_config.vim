@@ -55,8 +55,8 @@ let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 """"""""""""""""""""""""""""""
 " => TagList plugin
 """"""""""""""""""""""""""""""
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
+"let Tlist_Show_One_File=1
+"let Tlist_Exit_OnlyWindow=1
 
 
 """"""""""""""""""""""""""""""
