@@ -1,0 +1,17 @@
+,V
+/home/aaron/.vim00/autoload/home/aaron/.vim00/bundle/home/aaron/.vim00/doc/home/aaron/.vim00/temp_dirs/home/aaron/.vim00/vimrcs/home/aaron/.vim00/install_awesome_vimrc.sh/home/aaron/.vim00/install_basic_vimrc.sh/home/aaron/.vim00/README.md/home/aaron/.vim00/.gitignore,v
+bundle/c.vim (untracked content),v
+https://github.com/vim-scripts/vimwiki.git,v
+https://github.com/vim-scripts/SuperTab.git,v
+new-omni-completion,v
+格式化全文： gg=G自动缩进当前行： ==,V
+bailiangcn,v
+t,v
+r,v
+e,v
+s,v
+d,v
+.vim_runtime,v
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => Helper functions""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",v
+http://amix.dk/,v
+https://github.com/xgfone/vimrc.git,v
