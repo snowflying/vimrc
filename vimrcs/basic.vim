@@ -147,6 +147,11 @@ endtry
 
 set background=dark
 
+" Set and show the color column
+if v:version >= 703
+    set colorcolumn=+1
+endif
+
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -184,9 +189,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 500 characters
+" Linebreak on 80 characters
 set lbr
-set tw=500
+set tw=80
 
 set ai "Auto indent
 set si "Smart indent
