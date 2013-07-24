@@ -112,3 +112,21 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indent-guides 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:indent_guides_guide_size=1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indentLine
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:indentLine_char='|'
+"if has("gui-running")
+"    let g:indentLine_color_gui='#A4E57E'
+"else
+"    let g:indentLine_color_term=239
+"endif
+
