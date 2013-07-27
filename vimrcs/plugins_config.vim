@@ -124,9 +124,9 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => indentLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:indentLine_char='|'
-"if has("gui-running")
-"    let g:indentLine_color_gui='#A4E57E'
-"else
-"    let g:indentLine_color_term=239
-"endif
+if has("gui_running")
+    let g:indentLine_color_gui='#A4E57E'
+else
+    let g:indentLine_color_term=239
+endif
 
