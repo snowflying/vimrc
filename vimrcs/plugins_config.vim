@@ -130,3 +130,16 @@ else
     let g:indentLine_color_term=239
 endif
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => python-mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set key 'R' for run python code
+let g:pymode_run_key = 'R'
+
+" Disable python folding, default enable
+"let g:pymode_folding = 0
+
+" Unload pylint code plugin, default load
+"let g:pymode_lint= 0
+
