@@ -199,6 +199,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+set list
+set listchars=tab:>> ",trail:-
+
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
