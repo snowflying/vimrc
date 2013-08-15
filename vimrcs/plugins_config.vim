@@ -23,12 +23,6 @@ map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
-" => pydiction plugin
-""""""""""""""""""""""""""""""
-let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
-
-
-""""""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
@@ -38,11 +32,11 @@ map <leader>f :MRU<CR>
 """"""""""""""""""""""""""""""
 " => YankRing
 """"""""""""""""""""""""""""""
-if has("win16") || has("win32")
-    " Don't do anything
-else
-    let g:yankring_history_dir = '~/.temp_dirs'
-endif
+"if has("win16") || has("win32")
+"    " Don't do anything
+"else
+"    let g:yankring_history_dir = '~/.temp_dirs'
+"endif
 
 
 """"""""""""""""""""""""""""""
@@ -50,13 +44,6 @@ endif
 """"""""""""""""""""""""""""""
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-
-
-""""""""""""""""""""""""""""""
-" => TagList plugin
-""""""""""""""""""""""""""""""
-"let Tlist_Show_One_File=1
-"let Tlist_Exit_OnlyWindow=1
 
 
 """"""""""""""""""""""""""""""
@@ -79,22 +66,9 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
 
 """"""""""""""""""""""""""""""
-" => Peepopen
-""""""""""""""""""""""""""""""
-map <leader>j :PeepOpen<cr>
-
-
-""""""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
-
-
-""""""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn .git generated'
 set grepprg=/bin/grep\ -nH
 
 
@@ -110,33 +84,41 @@ map <leader>nf :NERDTreeFind<cr>
 " => surround.vim config
 " Annotate strings with gettext http://amix.dk/blog/post/19678
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap Si S(i_<esc>f)
-au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
+"vmap Si S(i_<esc>f)
+"au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => indent-guides 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:indent_guides_guide_size=1
+let g:indent_guides_guide_size=1
+let g:indent_guides_start_level = 1
+let g:indent_guides_space_guides = 1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+"if g:isTerminal
+"    hi IndentGuidesOdd  ctermbg=236
+"    hi IndentGuidesEven ctermbg=237
+"else
+"endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => indentLine
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:indentLine_char='|'
-if has("gui_running")
-    let g:indentLine_color_gui='#A4E57E'
-else
-    let g:indentLine_color_term=239
-endif
+"if has("gui_running")
+"    let g:indentLine_color_gui='#A4E57E'
+"else
+"    let g:indentLine_color_term=239
+"endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => python-mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set key 'R' for run python code
-let g:pymode_run_key = 'R'
-
 " Disable python folding, default enable
 let g:pymode_folding = 0
 

@@ -141,7 +141,7 @@ set foldcolumn=1
 syntax on
 
 try
-    colorscheme peaksea 
+    colorscheme luinnar 
 catch
 endtry
 
@@ -191,9 +191,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 120 characters
+" Linebreak on 80 characters
 set lbr
-set tw=120
+set tw=80
 
 set ai "Auto indent
 set si "Smart indent

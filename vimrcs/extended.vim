@@ -11,9 +11,11 @@
 set background=dark
 
 if has("gui_running")
-    colorscheme fu  "peaksea
+    "colorscheme default 
+    colorscheme synic
 else
-    colorscheme peaksea 
+    colorscheme default 
+    "colorscheme luinnar 
 endif
 
 " Set font according to system
