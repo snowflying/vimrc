@@ -975,6 +975,15 @@ fileformat设置成mac。
     命令“%!xxd”从正常状态进入十六进制状态；而“%!xxd -r”则从十六进制状态返回正常状态。
 
 
+18.13  将TAB键转换成SPACE
+    在一般模式（NORMAL）下，执行以下命令即可：
+    :retab
+    此命令会将整个缓冲区中的TAB转换成tabstop个SPACE；如果retab命令后有一个数字N，
+    则将整个缓冲区中的TAB字符转换成N个SPACE，如：
+    :retab 8
+    注：此命令也会将一个字符串变量中的TAB转换成SAPCE。
+
+
 
                             附录一  常用环境参数设置
 

@@ -294,14 +294,23 @@ if has("mac") || has("macunix")
   vmap <D-k> <M-k>
 endif
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+" Delete trailing white space and replacing tab with space on save.
 func! DeleteTrailingWS()
   exe "normal mz"
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+autocmd BufWrite *.py   :call DeleteTrailingWS()
+autocmd BufWrite *.js   :call DeleteTrailingWS()
+autocmd BufWrite *.html :call DeleteTrailingWS()
+autocmd BufWrite *.htm  :call DeleteTrailingWS()
+autocmd BufWrite *.css  :call DeleteTrailingWS()
+autocmd BufWrite *.h    :call DeleteTrailingWS()
+autocmd BufWrite *.hpp  :call DeleteTrailingWS()
+autocmd BufWrite *.c    :call DeleteTrailingWS()
+autocmd BufWrite *.cc   :call DeleteTrailingWS()
+autocmd BufWrite *.cpp  :call DeleteTrailingWS()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
