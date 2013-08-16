@@ -200,7 +200,7 @@ set si "Smart indent
 set wrap "Wrap lines
 
 set list
-set listchars=tab:>> ",trail:-
+set listchars=tab:>>,trail:.
 
 
 """"""""""""""""""""""""""""""
