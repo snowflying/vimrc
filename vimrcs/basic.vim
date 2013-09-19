@@ -66,6 +66,11 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+if has("gui_running")
+    set lines=40
+    set columns=120
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
